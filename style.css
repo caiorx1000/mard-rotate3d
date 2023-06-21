@@ -1,19 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body{
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: linear-gradient(45deg, #8460ed, #ff1252);
-
+    overflow-x: hidden;
 }
 .card-container{
     perspective: 800px;
 }
 .card {
-    
     margin: 100px auto;
     width: 250px;
-    height: 350px;
+    height: 450px;
     transform-style: preserve-3d;
     position: relative;
     transition: transform .75s
